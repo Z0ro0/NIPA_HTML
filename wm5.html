@@ -1,0 +1,57 @@
+<!-- 목차
+header-> 머리글 담는 공간
+nav-> 메뉴 버튼 담는 공간, ul, li, a와 함께 사용 -->
+<!-- 본문
+main-> 문서의 주요 내용을 담는 태그
+        IE 지원하지 않기 때문에 role="main" 속성 필수 입력
+        <main role="main"></main>
+article-> 문서의 주요 이미지나 텍스트 등의 정보를 담고 구역을 설정하는 태그
+            태그 내에 구역을 대표하는 타이틀 <h>태그가 존재해야 함</h> -->
+<!-- 하단
+footer-> 가장 하단에 들어가는 정보를 표기할 때 사용
+        안에 div가 들어간다 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>엘리스 :: elice</title>
+</head>
+<body>
+  <!--상단 영역 <header>-->
+  <header>
+    <!--지시사항 1번의 내용을 기입합니다.-->
+    <h1>
+ <img src="elice_logo.png">
+</h1>
+    <!--지시사항 2번의 내용을 기입합니다.-->
+    <nav>
+ <li><a href="#">홈</a></li>
+ <li><a href="#">회사 소개</a></li>
+ <li><a href="#">연락처</a></li>
+</nav>
+  </header>
+  
+  <!--본문 영역 <main>-->
+  <main role="main">
+    <article>
+      <!--지시사항 1번의 내용을 기입합니다.-->
+      <h2>회사 소개</h2>
+      <!--지시사항 2번의 내용을 기입합니다.-->
+      <p>회사 소개와 관련된 본문 내용</p>
+    </article>
+  </main>
+  
+  <!--하단 영역 <footer>-->
+  <footer>
+    <!--지시사항 1, 2, 3번의 내용을 기입합니다.-->
+    <div>
+    <p>서울시 서초구</p>
+</div>
+<div>
+    <p>010-111-2222</p>
+</div>
+    
+  </footer>
+</body>
+</html>
