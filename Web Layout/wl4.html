@@ -1,0 +1,52 @@
+<!-- display: 요소의 성격을 바꿈 ex) p{display:inline;}
+                                *display: inlin-block; <-- 줄바꿈X, width height 지정 가능 but width height 지정하지 않으면 inline처럼
+float: left, right - 왼쪽 정렬 오른쪽 정렬
+        clear: none; 특정 요소가 온 다음 다음 요소를 그냥 써 줌
+        clear: left; left에게 우선권을 줌
+        clear: right; right에게 우선권을 줌
+        clear: both; left, right 둘 다 우선권을 주기 때문에 왼쪽정렬이 위에 옴
+
+브라우저와 공간 사이의 공백 제거하기: 1. html, body margin, padding 0으로 주기
+                                    2. css에서 *선택자로 margin, padding 0으로 주기 -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>레이아웃에 영향을 미치는 속성 : display</title>
+
+    <style>
+        p {
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            /* 지시사항 1번 내용을 코드로 작성해보세요. */
+            display: inline;
+        }
+
+        a {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            /* 지시사항 2번 내용을 코드로 작성해보세요. */
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+     <p>Block Element</p>
+    <p>Block Element</p>
+    <p>Block Element</p>
+
+    <a href="#">Inline Element</a>
+    <a href="#">Inline Element</a>
+    <a href="#">Inline Element</a>
+
+</body>
+
+</html>
